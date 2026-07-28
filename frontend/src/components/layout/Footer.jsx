@@ -12,9 +12,12 @@ const Footer = () => {
     <footer className="bg-charcoal-900 text-ivory">
       <Container className="grid grid-cols-1 gap-12 py-20 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="font-display text-2xl text-ivory">Opulent</span>
-            <span className="font-display text-2xl italic text-gold-500">Homes</span>
+        <Link href="/" className="flex items-center">
+            <img
+              src="/OpulentHome-logo.png"
+              alt="Opulent Homes"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
           <p className="max-w-xs text-sm leading-relaxed text-ivory/60">
             Curated addresses across Mira Road, Bhayandar, and Mumbai — for buyers who choose

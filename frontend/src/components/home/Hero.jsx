@@ -16,7 +16,7 @@ const Hero = () => {
     <section ref={ref} className="relative flex min-h-[100svh] flex-col overflow-hidden bg-charcoal-900">
       <motion.div
         style={{ y: imageY }}
-        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-40"
+        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-90"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/60 via-charcoal-900/70 to-charcoal-900" />
 
@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl font-display text-5xl leading-[1.1] text-ivory sm:text-6xl lg:text-7xl"
           >
-            Addresses built for a life <span className="italic text-gold-500">well chosen.</span>
+            Find your dream home in <span className="italic text-gold-500">Mumbai with us.</span>
           </motion.h1>
 
           <motion.p

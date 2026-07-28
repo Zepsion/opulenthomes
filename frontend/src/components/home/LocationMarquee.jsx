@@ -1,4 +1,4 @@
-const MARKETS = ["Mira Road", "Bhayandar", "Mumbai", "Mira Road", "Bhayandar", "Mumbai"];
+const MARKETS = ["Mira Road", "Bhayandar", "Mumbai", "Mira Road", "Bhayandar", "Mumbai","Thane",];
 
 const LocationMarquee = () => {
   return (

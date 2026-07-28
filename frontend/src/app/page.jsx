@@ -30,8 +30,8 @@ export default async function Home() {
           <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
             <SectionHeading
               eyebrow="Curated Inventory"
-              title="Featured Residences"
-              description="A rotating shortlist of the properties our advisors are personally recommending this month."
+              title="Featured properties in Mumbai"
+              description="Browse all our luxurious properties with stunning views and world-class amenities in Mumbai."
             />
             <Button href="/properties" variant="ghost" size="md" className="w-fit shrink-0">
               View All Properties

@@ -33,6 +33,10 @@ export const metadata = {
   },
   description:
     "Opulent Homes curates ultra-premium, verified real estate listings across Mira Road, Bhayandar, and Mumbai. Vetted builders, transparent pricing, dedicated advisors.",
+  icons: {
+    icon: "/opulent-icon.png",
+    apple: "/opulent-icon.png",
+  },
   openGraph: {
     type: "website",
     siteName: "Opulent Homes",

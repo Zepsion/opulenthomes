@@ -42,9 +42,12 @@ const Navbar = () => {
     >
       <Container>
         <nav className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="font-display text-2xl tracking-wide text-ivory">Opulent</span>
-            <span className="font-display text-2xl italic tracking-wide text-gold-500">Homes</span>
+          <Link href="/" className="flex items-center">
+            <img
+              src="/OpulentHome-logo.png"
+              alt="Opulent Homes"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           <div className="hidden items-center gap-10 lg:flex">
