@@ -15,6 +15,10 @@ const inter = Inter({
 });
 
 export const metadata = {
+  icons: {
+    icon: "/opulent-icon.png",
+    apple: "/opulent-icon.png", 
+  },
   title: "Opulent Homes | Admin Panel",
   description: "Internal admin panel for Opulent Homes.",
   robots: { index: false, follow: false },

@@ -2,6 +2,7 @@ import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker, HiOutlineClock 
 import Container from "@components/common/Container.jsx";
 import PageHeader from "@components/common/PageHeader.jsx";
 import EnquiryForm from "@components/forms/EnquiryForm.jsx";
+import GoogleMapSection from "@components/googleMap/GoogleMapSection.jsx";
 
 export const metadata = {
   title: "Contact Us",
@@ -65,6 +66,7 @@ export default function ContactPage() {
           </div>
         </Container>
       </section>
+      <GoogleMapSection/>
     </>
   );
 }
