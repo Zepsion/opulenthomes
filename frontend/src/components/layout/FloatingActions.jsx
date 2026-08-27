@@ -1,6 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlinePhone } from "react-icons/hi";
-import { SOCIAL_LINKS } from "@lib/constants.js";
+import { SOCIAL_LINKS, CONTACT_PHONE } from "@lib/constants.js";
 
 const FloatingActions = () => {
   return (
@@ -15,7 +15,7 @@ const FloatingActions = () => {
         <FaWhatsapp />
       </a>
       <a
-        href="tel:+912212345678"
+        href={`tel:${CONTACT_PHONE.tel}`}
         aria-label="Call Opulent Homes"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-charcoal-900 text-xl text-gold-500 shadow-luxe transition-transform hover:scale-105"
       >

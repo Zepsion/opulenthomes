@@ -13,6 +13,8 @@ import routes from "./routes/index.js";
 import { notFoundHandler, errorHandler } from "./middleware/error.middleware.js";
 
 const app = express();
+// ---- Behind a proxy (Render) — sahi client IP (rate limit) ke liye ----
+app.set("trust proxy", 1);
 
 // ---- Security & core middleware ----
 app.use(helmet());

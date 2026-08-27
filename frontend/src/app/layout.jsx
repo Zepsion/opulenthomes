@@ -1,30 +1,28 @@
-import { Playfair_Display, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@components/layout/Navbar.jsx";
 import Footer from "@components/layout/Footer.jsx";
 import FloatingActions from "@components/layout/FloatingActions.jsx";
 import { SITE_URL } from "@lib/constants.js";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-});
-
+// ── Site font: SINGLE SOURCE OF TRUTH ─────────────────────────────
+// Poore website ka font yahin se decide hota hai. Future mein change
+// karna ho? Bas neeche `Inter` ki jagah doosra next/font import likho —
+// baaki kahin kuch nahi badalna padega.
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sans", // body text
+  display: "swap",
 });
 
-/**
- * Default metadata for every page. Individual pages override `title`
- * and `description` via their own `export const metadata` or
- * `generateMetadata()` — this is the SEO foundation the old Vite SPA
- * couldn't provide, since a client-only app can't inject per-page
- * <title>/<meta> tags into the HTML a crawler first sees.
- */
+const interDisplay = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display", // headings (pehle Playfair Display tha)
+  display: "swap",
+});
+
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -53,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interDisplay.variable}`}>
       <body className="flex min-h-screen flex-col bg-ivory">
         <Navbar />
         <main className="flex-1">{children}</main>

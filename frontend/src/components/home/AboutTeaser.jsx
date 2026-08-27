@@ -7,7 +7,7 @@ import Button from "@components/common/Button.jsx";
 
 const STATS = [
   { value: "120+", label: "Residences Curated" },
-  { value: "18", label: "Verified Builder Partners" },
+  { value: "18", label: "RERA-Verified Builders" },
   { value: "3", label: "Core Markets" },
 ];
 
@@ -24,7 +24,7 @@ const AboutTeaser = () => {
         >
           <img
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1400&auto=format&fit=crop"
-            alt="An Opulent Homes advisor reviewing a residence with a client"
+            alt="An Opulent Homes advisor reviewing a premium apartment in Mira Road with a homebuyer"
             className="h-full w-full object-cover"
           />
         </motion.div>
@@ -32,8 +32,11 @@ const AboutTeaser = () => {
         <div className="flex flex-col gap-10">
           <SectionHeading
             eyebrow="Why Opulent Homes"
-            title="We don't list everything. We list what's worth your time."
-            description="Every residence on this site has been walked through, cross-checked against builder credentials, and benchmarked against comparable resale value before it ever reaches you. It's a slower way to sell real estate — and the only one we're interested in."
+            title="We Don’t List Every Home.
+We List the Ones Worth Your Time."
+            description="At Opulent Home, we believe finding the right property should feel reassuring, not overwhelming. That is why we take a more careful and transparent approach to real estate across Mira Road, Bhayandar, and Mumbai’s western suburbs.
+
+Every home we list is personally visited and carefully evaluated before it reaches you. We cross-check properties against the builder’s RERA registration, project details, and track record, while also comparing them with real resale values and the surrounding market. This helps us identify properties that offer genuine value rather than simply adding more listings to the marke"
           />
 
           <div className="grid grid-cols-3 gap-6 border-t border-charcoal-900/10 pt-8">

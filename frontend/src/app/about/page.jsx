@@ -32,9 +32,10 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader
+        align="center"
         eyebrow="Our Story"
         title="Built by people who grew up in these suburbs."
-        description="Opulent Homes started with a simple frustration: real estate listings in Mira Road and Bhayandar were either outdated, misleading, or both. We set out to fix that, one verified listing at a time."
+        description="Finding a property in Mira Road and Bhayandar should be straightforward. Yet buyers often have to deal with outdated listings, incomplete information, changing prices, unclear project details, and properties that look very different online compared with reality. We saw an opportunity to do things differently. Opulent Homes started with the intention of bringing greater clarity, verification, and local knowledge into the property-buying experience. Instead of treating real estate as a numbers game where more listings automatically mean better service, we chose a more careful path. "
       />
 
       <section className="bg-white py-24 lg:py-32">
@@ -43,13 +44,10 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our Mission"
               title="A shorter path between a good home and the right buyer."
-              description="Mumbai's western suburbs are growing faster than the information available about them. We built Opulent Homes to close that gap — combining on-ground verification with an experience that respects your time."
+              description="Buying a home is one of the biggest financial decisions most people make. It deserves more than attractive photographs and a list of amenities."
             />
             <p className="text-base leading-relaxed text-charcoal-500">
-              Since our first listing, we've worked directly with families relocating for work,
-              first-time investors, and long-time residents upgrading within the neighborhoods
-              they already love. The common thread: they wanted a second opinion they could trust
-              before signing anything.
+            Our mission is to create a trusted real estate experience in Mira Road, Bhayandar, and the wider Mumbai western suburbs by bringing together verified property information, local market understanding, and honest guidance.
             </p>
           </div>
 

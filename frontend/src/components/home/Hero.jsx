@@ -38,7 +38,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl font-display text-5xl leading-[1.1] text-ivory sm:text-6xl lg:text-7xl"
           >
-            Find your dream home in <span className="italic text-gold-500">Mumbai with us.</span>
+            Discover Your Next Home
+            In  <span className="italic text-gold-500">Western Mumbai</span>
           </motion.h1>
 
           <motion.p
@@ -48,7 +49,7 @@ const Hero = () => {
             className="mt-6 max-w-xl text-base leading-relaxed text-ivory/70 sm:text-lg"
           >
             Opulent Homes curates a small number of exceptional residences across Mumbai's
-            fastest-growing western suburbs — each one vetted for design, developer credibility,
+            fastest-growing western suburbs  each one vetted for design, developer credibility,
             and long-term value.
           </motion.p>
 

@@ -7,8 +7,14 @@ export const NAV_LINKS = [
   { label: "Contact", path: "/contact" },
 ];
 
+export const CONTACT_PHONE = {
+  display: "+91 9769444414",
+  tel: "+919769444414",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919769444414",
+};
+
 export const SOCIAL_LINKS = {
-  whatsapp: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}`,
+  whatsapp: `https://wa.me/${CONTACT_PHONE.whatsapp}`,
   instagram: `https://instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE || ""}`,
 };
 

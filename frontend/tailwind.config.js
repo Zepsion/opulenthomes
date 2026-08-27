@@ -22,8 +22,8 @@ export default {
         ivory: "#faf8f4",
       },
       fontFamily: {
-        display: ["var(--font-display)", "serif"],
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],  // "serif" se badla
+        sans: ["var(--font-sans)", "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.25em",
