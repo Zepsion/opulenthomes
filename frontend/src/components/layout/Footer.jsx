@@ -65,7 +65,7 @@ const Footer = () => {
             +91 9769444414
           </a>
           <a
-            href="mailto:hello@opulenthomes.in"
+            href="mailto:opulenthomess@gmail.com"
             className="flex items-center gap-2 text-sm text-ivory/70 hover:text-ivory"
           >
             <HiOutlineMail className="text-gold-500" />

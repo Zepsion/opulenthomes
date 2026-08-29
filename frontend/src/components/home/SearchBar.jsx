@@ -1,13 +1,20 @@
 "use client";
 
+import { Suspense } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter, useSearchParams } from "next/navigation";
 import { HiOutlineSearch } from "react-icons/hi";
-import { PROPERTY_TYPE_OPTIONS, LISTING_TYPE_OPTIONS, BUDGET_OPTIONS } from "@lib/constants.js";
 
-const SearchBar = () => {
+import {
+  PROPERTY_TYPE_OPTIONS,
+  LISTING_TYPE_OPTIONS,
+  BUDGET_OPTIONS,
+} from "@lib/constants.js";
+
+const SearchBarContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
+
   const { register, handleSubmit } = useForm({
     defaultValues: {
       listingType: searchParams.get("listingType") || "sale",
@@ -18,9 +25,11 @@ const SearchBar = () => {
 
   const onSubmit = (values) => {
     const params = new URLSearchParams();
+
     Object.entries(values).forEach(([key, value]) => {
       if (value) params.set(key, value);
     });
+
     router.push(`/properties?${params.toString()}`);
   };
 
@@ -33,6 +42,7 @@ const SearchBar = () => {
         <span className="text-[11px] font-semibold uppercase tracking-widest2 text-charcoal-500">
           Looking to
         </span>
+
         <select
           {...register("listingType")}
           className="rounded-lg border border-charcoal-900/10 bg-transparent px-3 py-2.5 text-sm text-charcoal-900 focus:border-gold-500"
@@ -49,11 +59,13 @@ const SearchBar = () => {
         <span className="text-[11px] font-semibold uppercase tracking-widest2 text-charcoal-500">
           Property Type
         </span>
+
         <select
           {...register("propertyType")}
           className="rounded-lg border border-charcoal-900/10 bg-transparent px-3 py-2.5 text-sm text-charcoal-900 focus:border-gold-500"
         >
           <option value="">Any Type</option>
+
           {PROPERTY_TYPE_OPTIONS.map((opt) => (
             <option key={opt.value} value={opt.value}>
               {opt.label}
@@ -66,11 +78,13 @@ const SearchBar = () => {
         <span className="text-[11px] font-semibold uppercase tracking-widest2 text-charcoal-500">
           Budget Up To
         </span>
+
         <select
           {...register("maxPrice")}
           className="rounded-lg border border-charcoal-900/10 bg-transparent px-3 py-2.5 text-sm text-charcoal-900 focus:border-gold-500"
         >
           <option value="">Any Budget</option>
+
           {BUDGET_OPTIONS.map((opt) => (
             <option key={opt.value} value={opt.value}>
               {opt.label}
@@ -87,6 +101,14 @@ const SearchBar = () => {
         Search
       </button>
     </form>
+  );
+};
+
+const SearchBar = () => {
+  return (
+    <Suspense fallback={null}>
+      <SearchBarContent />
+    </Suspense>
   );
 };
 
