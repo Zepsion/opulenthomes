@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import Container from "@components/common/Container.jsx";
 import PageHeader from "@components/common/PageHeader.jsx";
 import PropertyFilters from "@components/property/PropertyFilters.jsx";

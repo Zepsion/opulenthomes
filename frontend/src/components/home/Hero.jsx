@@ -1,6 +1,7 @@
 "use client";
+import { Suspense, useRef } from "react";
 
-import { useRef } from "react";
+// import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Container from "@components/common/Container.jsx";
 import Button from "@components/common/Button.jsx";
@@ -76,7 +77,9 @@ const Hero = () => {
         className="relative z-10 pb-10"
       >
         <Container>
-          <SearchBar />
+          <Suspense fallback={null}>
+            <SearchBar />
+          </Suspense>
         </Container>
       </motion.div>
     </section>
