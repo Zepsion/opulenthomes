@@ -58,11 +58,11 @@ const Footer = () => {
             Get in Touch
           </h4>
           <a
-            href="tel:+9769444414"
+            href="tel:+9930123846"
             className="flex items-center gap-2 text-sm text-ivory/70 hover:text-ivory"
           >
             <HiOutlinePhone className="text-gold-500" />
-            +91 9769444414
+            +91 9930123846
           </a>
           <a
             href="mailto:opulenthomess@gmail.com"

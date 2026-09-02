@@ -26,7 +26,7 @@ const CONTACT_DETAILS = [
       "Shop No-02 N.G Vedant  Opp RBK School,Poonam Garden Rd, Chandan Shanti, Mira Road East, Mira Bhayandar, Maharashtra 401107",
     copy: true,
   },
-  { icon: HiOutlineClock, label: "Hours", value: "Tue–Sun, 10:00 AM – 9:00 PM" },
+  { icon: HiOutlineClock, label: "Hours", value: "Everyday, 10:00 AM – 9:00 PM" },
 ];
 
 export default function ContactPage() {
@@ -35,7 +35,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Get In Touch"
         title="Tell us what you're looking for."
-        description="Whether you're buying, renting, or just exploring the market — one message gets you a real answer from a real advisor, not an automated drip campaign."
+        description="Whether you're buying, renting, or just exploring the market one message gets you a real answer from a real advisor, not an automated drip campaign."
       />
 
       <section className="bg-ivory py-16 lg:py-24">

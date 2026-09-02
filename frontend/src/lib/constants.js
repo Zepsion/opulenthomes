@@ -8,9 +8,9 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT_PHONE = {
-  display: "+91 9769444414",
-  tel: "+919769444414",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919769444414",
+  display: "+91 9930123846",
+  tel: "+919930123846",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919930123846",
 };
 
 export const SOCIAL_LINKS = {

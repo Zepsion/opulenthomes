@@ -5,6 +5,8 @@ import FloatingActions from "@components/layout/FloatingActions.jsx";
 import { SITE_URL } from "@lib/constants.js";
 import "./globals.css";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 // ── Site font: SINGLE SOURCE OF TRUTH ─────────────────────────────
 // Poore website ka font yahin se decide hota hai. Future mein change
 // karna ho? Bas neeche `Inter` ki jagah doosra next/font import likho —
@@ -25,6 +27,9 @@ const interDisplay = Inter({
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: "Opulent Homes | Premium Real Estate in Mira Road, Bhayandar & Mumbai",
     template: "%s | Opulent Homes",
@@ -58,6 +63,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <FloatingActions />
       </body>
+      <GoogleAnalytics gaId="G-XZ697Z4J3G" />
     </html>
   );
 }
